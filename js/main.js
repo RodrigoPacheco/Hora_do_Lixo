@@ -39,7 +39,16 @@ function carregaResumo(dadosRua) {
 }
 
 $("#btn_selecionarRua").click(function(){
-	
+/*	var rua = $("#busca_rua").val();
+	if (ruas[rua]) {
+		console.log(ruas[rua]);
+		if (ruas[rua].length == 1) {
+			carregaResumo(ruas[rua][0]);
+		} else {
+			mostraTela("div_selecionarNum");
+			$("#p_logradouro_numero").text(rua);
+		} 
+	}*/
 });
 
 function buscaRuaPorNumero(rua, numero) {
@@ -78,7 +87,7 @@ function getNextId() {
 $('#btn_criarLembrete').click(function(){
 	var now = new Date().getTime();
 	
-	var next_time = new Date(now + 10*1000);// 10 segundos
+	var next_time = new Date(dadosRua.HORACOLETA.trim() - 1000*1000);// 10 segundos //mudei para 1 hora
 	
 	var id = getNextId();
 	
