@@ -39,7 +39,7 @@ function carregaResumo(dadosRua) {
 }
 
 $("#btn_selecionarRua").click(function(){
-	var rua = $("#busca_rua").val();
+/*	var rua = $("#busca_rua").val();
 	if (ruas[rua]) {
 		console.log(ruas[rua]);
 		if (ruas[rua].length == 1) {
@@ -48,7 +48,7 @@ $("#btn_selecionarRua").click(function(){
 			mostraTela("div_selecionarNum");
 			$("#p_logradouro_numero").text(rua);
 		} 
-	}
+	}*/
 });
 
 function buscaRuaPorNumero(rua, numero) {
